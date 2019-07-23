@@ -1,0 +1,15 @@
+ 
+<mat-card *ngIf="person">
+  <mat-card-header> 
+    <mat-card-title> {{person.first_name}}</mat-card-title>
+    <mat-card-subtitle> {{person.last_name}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p> 
+       {{person.createdDate | date:'short'}}
+    </p>
+    <p> 
+       id on DB: {{person.id  }}
+     </p>
+  </mat-card-content>
+</mat-card>

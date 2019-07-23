@@ -1,0 +1,6 @@
+<div *ngIf="allPersons.length==0">
+    <h1>No persons added yet.. please add one...</h1> 
+</div>
+<div *ngIf="allPersons.length>0">
+    <app-person *ngFor="let person of allPersons" [person]="person"  ></app-person>
+</div>

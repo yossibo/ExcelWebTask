@@ -1,0 +1,18 @@
+<div>
+<h1>Add Person</h1>
+  <form [formGroup]="myPersonForm" (ngSubmit)="addPerson()">
+
+      <mat-form-field class="example-full-width">
+          <input  matInput placeholder="First name" formControlName="first_name" /> 
+     </mat-form-field><br/>
+     <span class="error"  *ngIf='myPersonForm.controls.first_name.dirty && !myPersonForm.controls.first_name.valid'>field is required!</span><br />
+     <mat-form-field class="example-full-width">
+        <input  matInput placeholder="Last name" formControlName="last_name" /> 
+   </mat-form-field><br/>
+   <span class="error"  *ngIf='myPersonForm.controls.last_name.dirty &&  !myPersonForm.controls.last_name.valid'>field is required!</span><br />
+ 
+    <button [color]="'primary'"  mat-button type="submit">Add person</button>
+  </form>
+
+  <mat-spinner *ngIf="isSubmitting" ></mat-spinner>
+</div>
