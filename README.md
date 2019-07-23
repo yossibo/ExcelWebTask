@@ -12,7 +12,7 @@ with root user no password
 
 CLIENT
 =======
-1. run npm i to oinstall node modules
+1. run npm i to install node modules
 2. run ng-serve --open
 3. app will load at localhost:4200
 
